@@ -6,7 +6,7 @@ orbs:
 jobs:
   test:
     docker:
-      - image: cimg/openjdk:11.0-browsers
+      - image: circleci/openjdk:11.0-browsers
     environment: 
       LANG: hu_HU.UTF-8
     steps:
