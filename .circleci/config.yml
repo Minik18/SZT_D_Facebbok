@@ -17,9 +17,9 @@ jobs:
             - "~/.m2"
           key: facebook-{{ checksum "pom.xml" }}
       - store_test_results:
-          path: target/test-report.html
+          path: target/failsafe-reports/failsafe-summary.xml
       - store_artifacts:
-          path: target/generated-report
+          path: target/test-report.html
 
 workflows:
   maven_test:
