@@ -31,6 +31,9 @@ public class WebDriverFactory {
 
     @Value("${headless:false}")
     private Boolean headless;
+    
+    @Value("${lang:hu}")
+    private String lang;
 
     private WebDriver webDriver;
 
@@ -68,7 +71,7 @@ public class WebDriverFactory {
         WebDriverManager.chromedriver().setup();
 
         LOGGER.info("ChromeDriver was created");
-        return new ChromeDriver(new ChromeOptions().setHeadless(headless));
+        return new ChromeDriver(new ChromeOptions().setHeadless(headless).addArguments("--lang="+lang));
     }
 
     private WebDriver setUpFirefoxDriver() {
