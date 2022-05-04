@@ -6,6 +6,4 @@ orbs:
 workflows:
   maven_test:
     jobs:
-      - maven/test:
-            command: mvn clean verify -Dheadless=true 
-            test_results_path: target/test-report.html 
+      - maven/test
