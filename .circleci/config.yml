@@ -17,7 +17,7 @@ jobs:
             - "~/.m2"
           key: facebook-{{ checksum "pom.xml" }}
       - store_test_results:
-          path: target/cucumber-reports
+          path: target/test-report.html
       - store_artifacts:
           path: target/generated-report
 
