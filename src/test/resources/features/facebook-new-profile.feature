@@ -3,9 +3,9 @@ Feature: Facebook new profile page
   Background:
     Given the home page is opened
     And it is scrolled down
-    And the Cookie disclaimer is closed
+    # And the Cookie disclaimer is closed
     And on the home page the 'Email' is filled in with 'szoftverteszt.2022.73513@gmail.com'
-    And on the home page the 'Password' is filled in with '<jelszo>'
+    And on the home page the 'Password' is filled in with 'enhsNRJ46'
     And on the home page 'Bejelentkezés' is clicked
 
   Scenario: new profile page

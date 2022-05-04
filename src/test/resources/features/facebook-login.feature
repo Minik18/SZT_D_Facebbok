@@ -3,7 +3,7 @@ Feature: Facebook login
   Background:
     Given the home page is opened
       And it is scrolled down
-      And the Cookie disclaimer is closed
+      # And the Cookie disclaimer is closed
 
 
   Scenario: Check login with empty fields
@@ -14,7 +14,7 @@ Feature: Facebook login
 
   Scenario: Login with test user
     When on the home page the 'Email' is filled in with 'szoftverteszt.2022.73513@gmail.com'
-      And on the home page the 'Password' is filled in with '<jelszo>'
+      And on the home page the 'Password' is filled in with 'enhsNRJ46'
       And on the home page 'Bejelentkezés' is clicked
     Then the Page title is like '^Facebook$|\([0-9]*\) ?Facebook$'
 
