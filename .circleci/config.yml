@@ -22,6 +22,6 @@ jobs:
           path: target/generated-report
 
 workflows:
-  maven-test:
+  maven_test:
     jobs:
       - test
