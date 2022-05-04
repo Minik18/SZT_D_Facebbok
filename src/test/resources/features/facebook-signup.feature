@@ -3,7 +3,7 @@ Feature: Facebook sign up page
   Background:
     Given the home page is opened
       And it is scrolled down
-      And the Cookie disclaimer is closed
+      # And the Cookie disclaimer is closed
       And the Új fiók létrehozása header button is clicked
 
   # Scenario: Fields can be filled
