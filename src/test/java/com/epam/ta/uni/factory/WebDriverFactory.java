@@ -32,7 +32,7 @@ public class WebDriverFactory {
     @Value("${headless:false}")
     private Boolean headless;
     
-    @Value("${lang:hu}")
+    @Value("${lang:hu-HU}")
     private String lang;
 
     private WebDriver webDriver;
