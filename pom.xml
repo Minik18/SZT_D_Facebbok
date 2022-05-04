@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.epam.ta.unideb</groupId>
-    <artifactId>spotify-ta-unideb</artifactId>
+    <groupId>hu.unideb.inf</groupId>
+    <artifactId>facebook</artifactId>
     <version>1.0</version>
 
     <properties>
