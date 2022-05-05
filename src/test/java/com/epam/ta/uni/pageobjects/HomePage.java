@@ -42,6 +42,12 @@ public class HomePage extends CommonPageObject {
     @FindBy(css = "form[data-testid='royal_login_form'] > div > a")
     private WebElement recoverPassword;
 
+    @FindBy(id = "identify_email")
+    private WebElement forgottenPasswordEmailInput;
+
+    @FindBy(id = "did_submit")
+    private WebElement forgottenPasswordEmailSearch;
+
     @FindBy(xpath = "//a[@href=\"https://www.facebook.com/pages/?category=top&ref=bookmarks\"]")
     private WebElement profiles;
 
@@ -78,7 +84,9 @@ public class HomePage extends CommonPageObject {
             Map.entry("Oldalak", profiles),
             Map.entry("Új oldal létrehozása", newProfileLink),
             Map.entry("Oldal neve", pageNameInput),
-            Map.entry("Kategória", pageCategoryInput)
+            Map.entry("Kategória", pageCategoryInput),
+            Map.entry("Elfelejtett jelszó email", forgottenPasswordEmailInput),
+            Map.entry("Keresés", forgottenPasswordEmailSearch)
     );
 
     public WebElement getInputFieldByName(final String name) {
@@ -98,6 +106,7 @@ public class HomePage extends CommonPageObject {
     public void clickOnCookieDisclaimer() {
         waitForElementToBeClickable(cookieDisclaimer);
         clickWithJsExecutor(cookieDisclaimer);
+        waitForPageReadiness();
     }
 
     public Object goToHomePageWithAlert() {

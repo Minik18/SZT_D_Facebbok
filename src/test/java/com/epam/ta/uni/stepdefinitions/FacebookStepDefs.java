@@ -106,7 +106,6 @@ public class FacebookStepDefs {
                 .atMost(Duration.ofSeconds(PAGE_OR_ELEMENT_LOAD_WAIT_SECONDS))
                 .until(() -> homePage.getPageTitle(),
                         Matchers.matchesPattern(regexp));
-        homePage.waitForPageReadiness();
     }
 
     @When("the {string} is filled in with {string}")

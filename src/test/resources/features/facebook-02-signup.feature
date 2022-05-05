@@ -26,4 +26,3 @@ Feature: Facebook sign up page
       | Vezetéknév  |         | Mi a neved? |
 
 
-

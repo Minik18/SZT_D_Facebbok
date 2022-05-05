@@ -82,17 +82,5 @@ public class CommonPageObject {
         return getWebDriverFromFactory().getTitle();
     }
 
-    public void waitForSeconds(int seconds) {
-        /*WebDriverWait w = new WebDriverWait(getWebDriverFromFactory(), seconds);
-        w.until(
-                driver -> String.valueOf(1==2)
-        );*/
-        //getWebDriverFromFactory().manage().timeouts().implicitlyWait(seconds, TimeUnit.SECONDS);
-        try {
-            Thread.sleep(seconds * 1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
 
 }
